@@ -14,5 +14,6 @@ jobs:
         source-files: '/'
         destination-username: 'lewisf2001uk'
         destination-repository: 'lewisf2001uk.github.io'
+        destination-branch: 'main'
         destination-directory: '2023'
         commit-email: 'lewisf2001uk@googlemail.com'
