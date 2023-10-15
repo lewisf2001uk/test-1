@@ -6,8 +6,8 @@ jobs:
   push-changes-to-github-pages-repo:
     runs-on: ubuntu-latest
     steps:
-    - name: Push changes to Github Pages repository
-      uses: nkoppel/push-files-to-another-repository@1.1.1
+    - name: Copy files to another repository
+      uses: nkoppel/push-files-to-another-repository@v1.1.1      
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
