@@ -1,0 +1,18 @@
+name: Push Changes to Github Pages
+
+on: push
+
+jobs:
+  push-changes-to-github-pages-repo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Push changes to Github Pages repository
+      uses: nkoppel/push-files-to-another-repository@1.1.1
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source-files: '/'
+        destination-username: 'lewisf2001uk'
+        destination-repository: 'lewisf2001uk.github.io'
+        destination-directory: '2023'
+        commit-email: 'lewisf2001uk@googlemail.com'
